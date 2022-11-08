@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.4;
 
-contract bonusSendBulk {
+contract BonusSendBulk {
     
     // to save the owner of the contract in construction
     address private owner;
@@ -57,7 +57,7 @@ contract bonusSendBulk {
         receiverAddr.transfer(receiverAmnt);
     }
     
-    function bulkSend(address payable[] calldata addrs, uint[] amnts, uint totalamount) payable public isOwner {
+    function bulkSend(address payable[] calldata addrs, uint[] memory amnts, uint totalamount) payable public isOwner {
         
         
         total_value += totalamount;
